@@ -8,7 +8,7 @@
 	background-color: black;
 }
 
-.paragraph p:second-child{
+.paragraph p:nth-child(2){
 	color: standard;
 }
 
@@ -16,17 +16,14 @@
 	color: red;
 }
 
-.list li:nth-child(even){
-	background-color: gray;
+.list li{
+	width: 50%;
+	padding: 10px;
+    background-color: gray;
 }
 
 .list li:nth-child(odd){
 	background-color: white;
-}
-
-.list li{
-	width: 50%;
-	padding: 10px;
 }
 
 .list li:first-child, li:last-child{
