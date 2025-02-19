@@ -1,35 +1,48 @@
 /*  your css code here. If applicable */
-:root{
-	background-color: rgb(135, 206, 235);
+/* Setting background color for the entire page using :root pseudo-class */
+:root {
+    --bg-color: rgb(135, 206, 235);
 }
 
-.paragraph p:first-child{
-	color: white;
-	background-color: black;
+body {
+    background-color: var(--bg-color);
 }
 
-.paragraph p:nth-child(2){
-	color: standard;
+/* Article Paragraph Styling */
+article p:first-child {
+    color: white;
+    background-color: black;
 }
 
-.paragraph p:last-child{
-	color: red;
+article p:nth-child(2) {
+    color: inherit; /* Standard text color (inherits from body or default) */
 }
 
-.list li{
-	width: 50%;
-	padding: 10px;
-    background-color: gray;
+article p:last-child {
+    color: red;
 }
 
-.list li:nth-child(odd){
-	background-color: white;
+/* Unordered List Styling */
+ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
 }
 
-.list li:first-child, li:last-child{
-	font-size: 22px;
+ul li {
+    background-color: gray; /* Default background color for all list items */
+    padding: 10px;
+    width: 50%;
 }
 
-.list li:nth-last-child(3){
-	background-color: pink;
+ul li:nth-child(odd) {
+    background-color: white; /* White background for odd items */
+}
+
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px; /* Increase font size for first and last list items */
+}
+
+ul li:nth-last-child(3) {
+    background-color: pink; /* Set pink background for third-to-last item */
 }
